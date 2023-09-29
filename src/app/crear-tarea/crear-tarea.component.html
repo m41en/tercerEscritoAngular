@@ -1,0 +1,19 @@
+<form (submit)="crearTarea()">
+  <div>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" [(ngModel)]="tarea.titulo" name="titulo" required>
+  </div>
+  <div>
+    <label for="contenido">Contenido:</label>
+    <input type="text" id="contenido" [(ngModel)]="tarea.contenido" name="contenido" required>
+  </div>
+  <div>
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" [(ngModel)]="tarea.estado" name="estado" required>
+  </div>
+  <div>
+    <label for="autor">Autor:</label>
+    <input type="text" id="autor" [(ngModel)]="tarea.autor" name="autor" required>
+  </div>
+  <button type="submit">Crear Tarea</button>
+</form>
